@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab_5\\Lab_5\\Lab_5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:Lab_5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab_5\\Lab_5\\dbase.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:dbase.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab_5\\Lab_5\\Man.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:Man.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab_5\\Lab_5\\Man.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:Man.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,14 +40,56 @@
               "RelativeDocumentMoniker": "Lab_5.cpp",
               "ToolTip": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab_5\\Lab_5\\Lab_5.cpp",
               "RelativeToolTip": "Lab_5.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-29T15:48:39.534Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Man.cpp",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab_5\\Lab_5\\Man.cpp",
+              "RelativeDocumentMoniker": "Man.cpp",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab_5\\Lab_5\\Man.cpp",
+              "RelativeToolTip": "Man.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-29T15:55:38.539Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Man.h",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab_5\\Lab_5\\Man.h",
+              "RelativeDocumentMoniker": "Man.h",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab_5\\Lab_5\\Man.h",
+              "RelativeToolTip": "Man.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-29T15:55:23.065Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbase.txt",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab_5\\Lab_5\\dbase.txt",
+              "RelativeDocumentMoniker": "dbase.txt",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab_5\\Lab_5\\dbase.txt",
+              "RelativeToolTip": "dbase.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-29T15:59:53.699Z",
+              "EditorCaption": ""
             }
           ]
         }

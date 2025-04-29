@@ -128,6 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Lab_5.cpp" />
+    <ClCompile Include="Man.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Man.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="dbase.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
