@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Lab_5.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Man.cpp" />
   </ItemGroup>
   <ItemGroup>
