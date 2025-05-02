@@ -1,0 +1,20 @@
+# Бинарные файлы
+.exe
+.o
+.obj
+.out
+
+# Папки сборки
+build
+bin
+Debug
+Release
+
+# Файлы IDE
+.vs
+.idea
+.sln
+.vcxproj
+
+# Системные файлы
+.DS_Store

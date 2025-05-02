@@ -1,87 +1,171 @@
 ﻿///////////////////////////////////////////////////////////
-// CODESRUN.cpp (основной файл программы)
-///////////////////////////////////////////////////////////
-
-#include "../Lab_5/Man.h"
-#include <fstream>
+// Main.cpp
 #include <iostream>
-#include <cstring>
-#include <Windows.h> 
+#include <vector>
+#include <limits>
+#define NOMINMAX // Отключает макросы min/max из Windows.h
+#include <Windows.h>
+#include "Triangle.h"
 
-const char filename[] = "dbase.txt";
+// Прототипы функций управления меню
+int Menu();
+int GetNumber(int min, int max);
+void ExitBack();
+void Show(const std::vector<Triangle*>& triangles);
+void Move(std::vector<Triangle*>& triangles);
+void FindMax(const std::vector<Triangle*>& triangles);
+void IsIncluded(const std::vector<Triangle*>& triangles);
+double GetDouble();
 
 int main() {
 	// Настройка локали и кодировки консоли
 	setlocale(LC_ALL, "ru");
 	SetConsoleCP(1251);       
-	SetConsoleOutputCP(1251);
+	SetConsoleOutputCP(1251); 
 
-	// Создание массива объектов Man (максимум 10 записей)
-	const int maxn_record = 10;
-	Man man[maxn_record];
+	// Инициализация тестовых точек
+	Point p1{ 0, 0 }, p2{ 0.5, 1 }, p3{ 1, 0 }, p4{ 0, 4.5 },
+		p5{ 2, 1 }, p6{ 2, 0 }, p7{ 2, 2 }, p8{ 3, 0 };
 
-	// Буферы для чтения данных
-	char buf[Man::l_buf + 1];  // Буфер для чтения строк из файла
-	char name[Man::l_name + 1]; // Буфер для ввода фамилии
+	// Создание коллекции треугольников
+	std::vector<Triangle*> triangles = {
+		new Triangle{p1, p2, p3, "triaA"},
+		new Triangle{p1, p4, p8, "triaB"},
+		new Triangle{p1, p5, p6, "triaC"},
+		new Triangle{p1, p7, p8, "triaD"}
+	};
 
-	// Открытие файла с данными
-	std::ifstream fin(filename);
-	if (!fin) {
-		std::cout << "Нет файла " << filename << std::endl;
-		return 1;
-	}
-
-	// Чтение данных из файла
-	int i = 0;
-	while (fin.getline(buf, Man::l_buf)) {
-		// Проверка на превышение максимального количества записей
-		if (i >= maxn_record) {
-			std::cout << "Слишком длинный файл" << std::endl;
-			return 1;
-		}
-
-		// Заполнение данных сотрудника
-		man[i].SetName(buf);        // Установка имени
-		man[i].SetBirthYear(buf);   // Установка года рождения
-		man[i].SetPay(buf);         // Установка зарплаты
-		i++;
-	}
-
-	int n_record = i;    // Реальное количество считанных записей
-	int n_man = 0;       // Счетчик найденных сотрудников
-	float mean_pay = 0.0f; // Сумма зарплат для расчета среднего
-
-	// Основной цикл поиска сотрудников
-	while (true) {
-		std::cout << "Введите фамилию или слово end: ";
-		std::cin.getline(name, Man::l_name + 1);
-
-		// Выход из цикла при вводе "end"
-		if (std::strcmp(name, "end") == 0) break;
-
-		bool not_found = true;
-		// Поиск по всем записям
-		for (i = 0; i < n_record; ++i) {
-			if (man[i].CompareName(name)) {
-				man[i].Print();          // Вывод информации
-				n_man++;                // Увеличение счетчика
-				mean_pay += man[i].GetPay(); // Суммирование зарплат
-				not_found = false;
-				break; // Прерываем цикл после первого найденного совпадения
-			}
-		}
-		if (not_found) {
-			std::cout << "Такого сотрудника нет" << std::endl;
+	// Главный цикл обработки команд
+	bool done = false;
+	while (!done) {
+		switch (Menu()) {
+		case 1: Show(triangles); break;     // Показать все объекты
+		case 2: Move(triangles); break;     // Переместить треугольник
+		case 3: FindMax(triangles); break;  // Найти максимальный
+		case 4: IsIncluded(triangles); break;// Проверить включение
+		case 5: done = true; break;         // Выход
+		default: std::cout << "Неверный выбор!\n";
 		}
 	}
 
-	// Вывод среднего оклада, если были найдены сотрудники
-	if (n_man) {
-		std::cout << "Средний оклад: " << mean_pay / n_man << std::endl;
-	}
-
+	// Освобождение памяти
+	for (auto& t : triangles) delete t;
 	return 0;
 }
 
+// Функция отображения главного меню
+int Menu() {
+	std::cout << "\n================= Главное меню =================\n"
+		<< "1 - Вывести все объекты\t3 - Найти максимальный\n"
+		<< "2 - Переместить\t\t4 - Определить отношение включения\n"
+		<< "\t\t5 - Выход\n"
+		<< "Выберите пункт: ";
+	return GetNumber(1, 5);
+}
 
+// Функция безопасного ввода целого числа в диапазоне
+int GetNumber(int min, int max) {
+	int number;
+	while (true) {
+		std::cin >> number;
+		// Проверка корректности ввода
+		if (std::cin.good() && number >= min && number <= max) {
+			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+			return number;
+		}
+		// Очистка ошибочного ввода
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		std::cout << "Повторите ввод (число от " << min << " до " << max << "): ";
+	}
+}
+
+// Пауза перед возвратом в меню
+void ExitBack() {
+	std::cout << "Нажмите Enter...";
+	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+}
+
+// Вывод информации о треугольниках
+void Show(const std::vector<Triangle*>& triangles) {
+	std::cout << "\n======= Перечень треугольников ========\n";
+	for (const auto& t : triangles) t->Show();
+	ExitBack();
+}
+
+// Функция ввода вещественного числа
+double GetDouble() {
+	double value;
+	while (true) {
+		std::cin >> value;
+		if (std::cin.peek() == '\n') break;
+		else {
+			std::cout << "Повторите ввод (ожидается вещественное число):\n";
+			std::cin.clear();
+			while (std::cin.get() != '\n') {};
+		}
+	}
+	return value;
+}
+
+// Перемещение треугольника
+void Move(std::vector<Triangle*>& triangles) {
+	std::cout << "============= Перемещение =============\n";
+	std::cout << "Введите номер треугольника (от 1 до "
+		<< triangles.size() << "): ";
+	int i = GetNumber(1, triangles.size()) - 1;
+	triangles[i]->Show();
+
+	// Ввод смещения
+	Point dp;
+	std::cout << "Введите смещение по х: ";
+	dp.x = GetDouble();
+	std::cout << "Введите смещение по у: ";
+	dp.y = GetDouble();
+
+	// Применение смещения
+	triangles[i]->Move(dp);
+	std::cout << "Новое положение треугольника:\n";
+	triangles[i]->Show();
+	ExitBack();
+}
+
+// Поиск треугольника с максимальной площадью
+void FindMax(const std::vector<Triangle*>& triangles) {
+	std::cout << "=== Поиск максимального треугольника ===" << std::endl;
+	Triangle triaMax("triaMax");
+	triaMax = *triangles[0];
+
+	// Поиск через сравнение площадей
+	for (int i = 1; i < 4; ++i) {
+		if (*triangles[i] > triaMax) {
+			triaMax = *triangles[i];
+		}
+	}
+	std::cout << "Максимальный треугольник: " << triaMax.GetName() << std::endl;
+	ExitBack();
+}
+
+// Проверка включения одного треугольника в другой
+void IsIncluded(const std::vector<Triangle*>& triangles) {
+	std::cout << "======== Отношение включения ==========" << std::endl;
+	int k = triangles.size();
+
+	// Выбор треугольников для сравнения
+	std::cout << "Введите номер 1-го треугольника (от 1 до " << k << "): ";
+	int i1 = GetNumber(1, k) - 1;
+	std::cout << "Введите номер 2-го треугольника (от 1 до " << k << "): ";
+	int i2 = GetNumber(1, k) - 1;
+
+	// Проверка включения и вывод результата
+	if (TriaInTria(*triangles[i1], *triangles[i2])) {
+		std::cout << triangles[i1]->GetName() << " - входит в - "
+			<< triangles[i2]->GetName() << std::endl;
+	}
+	else {
+		std::cout << triangles[i1]->GetName() << " - не входит в - "
+			<< triangles[i2]->GetName() << std::endl;
+	}
+	ExitBack();
+}
 
