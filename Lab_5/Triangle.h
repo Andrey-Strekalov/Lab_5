@@ -1,3 +1,4 @@
+
 ///////////////////////////////////////////////////////////
 // Triangle.h
 #ifndef TRIANGLE_H
@@ -7,28 +8,36 @@
 
 class Triangle {
 public:
-    Triangle(Point v1, Point v2, Point v3, const std::string& ident);
-    Triangle(const std::string& ident);
-    ~Triangle();
+	// Конструкторы
+	Triangle(Point v1, Point v2, Point v3, const std::string& ident);
+	Triangle(const std::string& ident);
 
-    Point Get_v1() const { return v1; }
-    Point Get_v2() const { return v2; }
-    Point Get_v3() const { return v3; }
-    const char* GetName() const { return name.c_str(); }
+	// Дружественная функция для проверки включения
+	friend bool TriaInTria(Triangle t1, Triangle t2);
 
-    void Show() const;
-    void ShowSideAndArea() const;
+	~Triangle(); // Деструктор
 
-    static int count;
+	// Методы доступа
+	Point Get_v1() const { return v1; }
+	Point Get_v2() const { return v2; }
+	Point Get_v3() const { return v3; }
+	const char* GetName() const { return name.c_str(); }
+
+	// Оператор сравнения по площади
+	bool operator >(const Triangle& tria) const;
+
+	void Show() const; // Отображение информации
+	void Move(Point dp); // Перемещение треугольника
+
+	static int count; // Счетчик созданных объектов
 
 private:
-    void CalculateSides();
+	void CalculateSides(); // Вычисление длин сторон
 
-    std::string objID;
-    std::string name;
-    Point v1, v2, v3;
-    double a, b, c;
+	std::string objID; // Идентификатор объекта
+	std::string name;  // Название треугольника
+	Point v1, v2, v3; // Вершины треугольника
+	double a, b, c;    // Длины сторон
 };
 
 #endif // TRIANGLE_H
-

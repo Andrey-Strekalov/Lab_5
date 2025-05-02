@@ -1,2 +1,7 @@
 ﻿  Main.cpp
+C:\Users\andre\OneDrive\Рабочий стол\Lab_5\Lab_5\Main.cpp(116,37): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\andre\OneDrive\Рабочий стол\Lab_5\Lab_5\Main.cpp(152,8): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Point.cpp
+  Triangle.cpp
+  Создание кода...
   Lab_5.vcxproj -> C:\Users\andre\OneDrive\Рабочий стол\Lab_5\Lab_5\x64\Debug\Lab_5.exe
