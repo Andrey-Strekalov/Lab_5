@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\andre\\source\\repos\\Andrey-Strekalov\\Lab_5\\Lab_5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|C:\\Users\\andre\\source\\repos\\Andrey-Strekalov\\Lab_5\\Lab_5\\Point.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:Point.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|C:\\Users\\andre\\source\\repos\\Andrey-Strekalov\\Lab_5\\Lab_5\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|C:\\Users\\andre\\source\\repos\\Andrey-Strekalov\\Lab_5\\Lab_5\\String.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:String.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|C:\\Users\\andre\\source\\repos\\Andrey-Strekalov\\Lab_5\\Lab_5\\String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,13 +30,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\Andrey-Strekalov\\Lab_5\\Lab_5\\Main.cpp",
               "RelativeDocumentMoniker": "Main.cpp",
               "ToolTip": "C:\\Users\\andre\\source\\repos\\Andrey-Strekalov\\Lab_5\\Lab_5\\Main.cpp",
               "RelativeToolTip": "Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-29T15:48:39.534Z",
               "IsPinned": true,
@@ -44,15 +48,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Point.cpp",
-              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\Andrey-Strekalov\\Lab_5\\Lab_5\\Point.cpp",
-              "RelativeDocumentMoniker": "Point.cpp",
-              "ToolTip": "C:\\Users\\andre\\source\\repos\\Andrey-Strekalov\\Lab_5\\Lab_5\\Point.cpp",
-              "RelativeToolTip": "Point.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "String.h",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\Andrey-Strekalov\\Lab_5\\Lab_5\\String.h",
+              "RelativeDocumentMoniker": "String.h",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\Andrey-Strekalov\\Lab_5\\Lab_5\\String.h",
+              "RelativeToolTip": "String.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-04T13:26:58.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "String.cpp",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\Andrey-Strekalov\\Lab_5\\Lab_5\\String.cpp",
+              "RelativeDocumentMoniker": "String.cpp",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\Andrey-Strekalov\\Lab_5\\Lab_5\\String.cpp",
+              "RelativeToolTip": "String.cpp",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAowEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-04T12:23:16.526Z",
+              "WhenOpened": "2025-05-04T13:21:56.495Z",
               "EditorCaption": ""
             }
           ]
