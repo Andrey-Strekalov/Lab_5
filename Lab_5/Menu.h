@@ -1,18 +1,23 @@
 ///////////////////////////////////////////////////////////
 // Menu.h
 #include <vector>
-#include "Function.h"
+#include "AString.h"
 #include "Action.h"
+#include "Factory.h"
+
+// Режимы работы программы
+enum JobMode { AddObj, DelObj, WorkWithObj, Exit };
 
 // Класс для управления меню
 class Menu {
 public:
-    Menu(std::vector<Function*>, std::vector<Action*>); // Конструктор
-    Function* SelectObject() const; // Выбор функции
-    Action* SelectAction(Function*) const; // Выбор операции
+    Menu(std::vector<Action*>);
+    JobMode SelectJob() const;            // Выбор режима
+    AString* SelectObject(const Factory&) const; // Выбор строки
+    Action* SelectAction(const AString*) const;  // Выбор операции
+    static int SelectItem(int);           // Утилита выбора пункта
+
 private:
-    int SelectItem(int) const; // Ввод пункта меню
-    std::vector<Function*> pObj; // Список функций
-    std::vector<Action*> pAct; // Список операций
+    std::vector<Action*> pAct; // Доступные операции
 };
 ///////////////////////////////////////////////////////////

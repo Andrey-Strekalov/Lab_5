@@ -1,34 +1,46 @@
 ﻿///////////////////////////////////////////////////////////
 // Main.cpp
 #include <iostream>
-#include "Function.h"
-#include "Exp.h"
-#include "Line.h"
+#include "AString.h"
+#include "SymbString.h"
+#include "HexString.h"
 #include "Action.h"
-#include "Calculation.h"
-#include "Tabulation.h"
-#include "AnyAction.h"
+#include "ShowStr.h"
+#include "ShowDec.h"
+#include "ShowBin.h"
+#include "Factory.h"
 #include "Menu.h"
 
 using namespace std;
 
-// Массив доступных функций
-Function* pObjs[] = { &f_exp, &f_line };
-
-// Массив доступных операций
-Action* pActs[] = { &calculation, &tabulation, &any_action };
-
-// Преобразование массивов в векторы
-vector<Function*> funcList(pObjs, pObjs + sizeof(pObjs) / sizeof(Function*));
-vector<Action*> operList(pActs, pActs + sizeof(pActs) / sizeof(Action*));
+// Список доступных операций
+Action* pActs[] = { &show_str, &show_dec, &show_bin };
+vector<Action*> actionList(pActs, pActs + sizeof(pActs) / sizeof(Action*));
 
 int main() {
-    Menu menu(funcList, operList); // Создание меню
+    Factory factory; // Хранилище строк
+    Menu menu(actionList); // Меню с операциями
 
     // Главный цикл программы
-    while (Function* pObj = menu.SelectObject()) {
-        Action* pAct = menu.SelectAction(pObj); // Выбор операции
-        pAct->Operate(pObj); // Выполнение операции
+    JobMode jobMode;
+    while ((jobMode = menu.SelectJob()) != Exit) {
+        switch (jobMode) {
+        case AddObj:
+            factory.AddObject();
+            break;
+        case DelObj:
+            factory.DeleteObject();
+            break;
+        case WorkWithObj: {
+            AString* pObj = menu.SelectObject(factory);
+            if (pObj) {
+                Action* pAct = menu.SelectAction(pObj);
+                if (pAct) pAct->Operate(pObj);
+            }
+            break;
+        }
+        }
+        cin.get();
     }
 
     cout << "Bye!\n";
