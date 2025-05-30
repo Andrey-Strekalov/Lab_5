@@ -5,13 +5,14 @@
 
 #include <string>
 
+// Базовый абстрактный класс для всех математических функций
 class Function {
 public:
-    virtual ~Function() {}
-    virtual const std::string& GetName() const = 0;
-    virtual void Calculate() = 0;
+    virtual ~Function() {} // Виртуальный деструктор для корректного удаления наследников
+    virtual const std::string& GetName() const = 0; // Получить название функции
+    virtual void Calculate() = 0; // Вычислить значение функции
 protected:
-    double x; // аргумент
+    double x; // Аргумент функции (доступен наследникам)
 };
 
 #endif /* FUNCTION_H */

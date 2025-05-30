@@ -10,12 +10,10 @@ void Line::Calculate() {
     cout << "Enter a = "; cin >> a;
     cout << "Enter b = "; cin >> b;
     cout << "Enter X = "; cin >> x;
-    cin.get();
-    cout << "y = " << (a * x + b) << endl;
-    cin.get();
+    cin.get(); // Очистка буфера
+    cout << "y = " << (a * x + b) << endl; // Вычисление
+    cin.get(); // Пауза
 }
 
-// Глобальный объект
-Line f_line;
+Line f_line; // Создание объекта
 ///////////////////////////////////////////////////////////
-

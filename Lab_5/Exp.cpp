@@ -1,4 +1,3 @@
-
 ///////////////////////////////////////////////////////////
 // Exp.cpp
 #include <iostream>
@@ -7,14 +6,15 @@
 
 using namespace std;
 
+// Реализация вычисления экспоненты
 void Exp::Calculate() {
     cout << "Calculation for function y = " << name << endl;
-    cout << "Enter X = "; cin >> x;
-    cin.get();
-    cout << "y = " << exp(x) << endl;
-    cin.get();
+    cout << "Enter X = "; cin >> x; // Ввод аргумента
+    cin.get(); // Очистка буфера от '\n'
+    cout << "y = " << exp(x) << endl; // Вычисление e^x
+    cin.get(); // Пауза перед выходом
 }
 
-// Глобальный объект
+// Создание глобального объекта
 Exp f_exp;
 ///////////////////////////////////////////////////////////
