@@ -2,14 +2,17 @@
 // Menu.h
 #include <vector>
 #include "Function.h"
+#include "Action.h"
 
-// Класс для меню выбора функций
+// Класс для управления меню
 class Menu {
 public:
-    Menu(std::vector<Function*>); // Конструктор принимает вектор функций
-    Function* SelectObject() const; // Выбор функции из меню
+    Menu(std::vector<Function*>, std::vector<Action*>); // Конструктор
+    Function* SelectObject() const; // Выбор функции
+    Action* SelectAction(Function*) const; // Выбор операции
 private:
-    int SelectItem(int) const; // Ввод номера пункта
-    std::vector<Function*> pObj; // Список функций + Exit
+    int SelectItem(int) const; // Ввод пункта меню
+    std::vector<Function*> pObj; // Список функций
+    std::vector<Action*> pAct; // Список операций
 };
 ///////////////////////////////////////////////////////////

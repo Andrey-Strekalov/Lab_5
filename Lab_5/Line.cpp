@@ -5,15 +5,12 @@
 
 using namespace std;
 
-void Line::Calculate() {
-    cout << "Calculation for function y = " << name << endl;
+// Установка коэффициентов линейной функции
+void Line::SetCoeff() {
     cout << "Enter a = "; cin >> a;
     cout << "Enter b = "; cin >> b;
-    cout << "Enter X = "; cin >> x;
-    cin.get(); // Очистка буфера
-    cout << "y = " << (a * x + b) << endl; // Вычисление
-    cin.get(); // Пауза
 }
 
-Line f_line; // Создание объекта
+// Создание глобального объекта
+Line f_line;
 ///////////////////////////////////////////////////////////

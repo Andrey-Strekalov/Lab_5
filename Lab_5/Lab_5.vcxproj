@@ -128,19 +128,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Action.cpp" />
+    <ClCompile Include="AnyAction.cpp" />
+    <ClCompile Include="Calculation.cpp" />
     <ClCompile Include="Exp.cpp" />
-    <ClCompile Include="Function.cpp" />
     <ClCompile Include="Line.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="Parabola.cpp" />
+    <ClCompile Include="Tabulation.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Action.h" />
+    <ClInclude Include="AnyAction.h" />
+    <ClInclude Include="Calculation.h" />
     <ClInclude Include="Exp.h" />
     <ClInclude Include="Function.h" />
     <ClInclude Include="Line.h" />
     <ClInclude Include="Menu.h" />
-    <ClInclude Include="Parabola.h" />
+    <ClInclude Include="Tabulation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
