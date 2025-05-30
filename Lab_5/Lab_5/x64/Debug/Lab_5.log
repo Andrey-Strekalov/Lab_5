@@ -1,9 +1,1 @@
-﻿  Exp.cpp
-  Function.cpp
-  Line.cpp
-  Main.cpp
-  Menu.cpp
-C:\Users\andre\OneDrive\Рабочий стол\СКФУ\Лаблораторные\Программирование\Labs\Lab_5\Lab_5\Lab_5\Menu.cpp(15,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  Parabola.cpp
-  Создание кода...
-  Lab_5.vcxproj -> C:\Users\andre\OneDrive\Рабочий стол\СКФУ\Лаблораторные\Программирование\Labs\Lab_5\Lab_5\Lab_5\x64\Debug\Lab_5.exe
+﻿  Lab_5.vcxproj -> C:\Users\andre\OneDrive\Рабочий стол\СКФУ\Лаблораторные\Программирование\Labs\Lab_5\Lab_5\Lab_5\x64\Debug\Lab_5.exe
