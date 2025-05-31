@@ -128,25 +128,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Action.cpp" />
     <ClCompile Include="Factory.cpp" />
-    <ClCompile Include="HexString.cpp" />
+    <ClCompile Include="Figure.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="ShowBin.cpp" />
-    <ClCompile Include="ShowDec.cpp" />
-    <ClCompile Include="ShowStr.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Action.h" />
-    <ClInclude Include="Astring.h" />
     <ClInclude Include="Factory.h" />
-    <ClInclude Include="HexString.h" />
-    <ClInclude Include="Menu.h" />
-    <ClInclude Include="ShowBin.h" />
-    <ClInclude Include="ShowDec.h" />
-    <ClInclude Include="ShowStr.h" />
-    <ClInclude Include="SymbString.h" />
+    <ClInclude Include="Figure.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
