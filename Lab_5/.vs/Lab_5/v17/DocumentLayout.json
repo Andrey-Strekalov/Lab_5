@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\VectError.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:VectError.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\Vect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Vect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\Vect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:Vect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\VectError.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VectError.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Vect.h",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\Vect.h",
               "RelativeDocumentMoniker": "Vect.h",
@@ -60,12 +60,11 @@
               "RelativeToolTip": "Vect.h",
               "ViewState": "AgIAAH4AAAAAAAAAAAAAABsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-31T08:51:29.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T08:51:29.196Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "VectError.h",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\VectError.h",
               "RelativeDocumentMoniker": "VectError.h",
@@ -73,8 +72,7 @@
               "RelativeToolTip": "VectError.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-31T08:51:16.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T08:51:16.749Z"
             }
           ]
         }
