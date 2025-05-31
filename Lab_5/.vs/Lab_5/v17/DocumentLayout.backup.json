@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\SparseArr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:SparseArr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\Vect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:Vect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\VectError.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{30E3AF49-CAEF-45D9-92AE-14875C6E4CB1}|Lab_5.vcxproj|solutionrelative:VectError.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -32,32 +36,45 @@
               "RelativeDocumentMoniker": "Main.cpp",
               "ToolTip": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\Main.cpp",
               "RelativeToolTip": "Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-29T15:48:39.534Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Vect.h",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\Vect.h",
+              "RelativeDocumentMoniker": "Vect.h",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\Vect.h",
+              "RelativeToolTip": "Vect.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-31T08:51:29.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VectError.h",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\VectError.h",
+              "RelativeDocumentMoniker": "VectError.h",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\VectError.h",
+              "RelativeToolTip": "VectError.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-31T08:51:16.749Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SparseArr.h",
-              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\SparseArr.h",
-              "RelativeDocumentMoniker": "SparseArr.h",
-              "ToolTip": "C:\\Users\\andre\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u041A\u0424\u0423\\\u041B\u0430\u0431\u043B\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Labs\\Lab_5\\Lab_5\\Lab_5\\SparseArr.h",
-              "RelativeToolTip": "SparseArr.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-31T08:08:43.42Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

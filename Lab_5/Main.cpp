@@ -1,44 +1,87 @@
 ﻿///////////////////////////////////////////////////////////
 // Main.cpp
+#include "Vect.h"
 #include <iostream>
 #include <string>
-#include "SparseArr.h"
 
 using namespace std;
 
+template<class T>
+void SomeFunction(Vect<T> v) {
+    std::cout << "Reversive output for " << v.mark() << endl;
+    size_t n = v.size();
+    for (int i = n - 1; i >= 0; --i)
+        std::cout << v[i] << " ";
+    std::cout << endl;
+}
+
 int main() {
-    // Создаем разреженный массив double размером 2,000,000
-    SparseArr<double> sal(2000000);
+    try {
+        string initStr[5] = { "first", "second", "third", "fourth", "fifth" };
 
-    // Устанавливаем значения для нескольких элементов
-    sal[127649] = 1.1;
-    sal[38225] = 1.2;
-    sal[2004056] = 1.3;  // Ошибка: индекс превышает длину
-    sal[1999999] = 1.4;
+        // Тестирование вектора int
+        Vect<int> v1(10);
+        v1.mark(string("v1"));  // Исправлено: добавлены скобки
+        size_t n = v1.size();
+        for (int i = 0; i < n; ++i)
+            v1[i] = i + 1;
+        v1.show();
+        SomeFunction(v1);
 
-    // Выводим содержимое массива
-    sal.Show("sal");
+        try {
+            // Тестирование вектора string
+            Vect<string> v2(5);
+            v2.mark(string("v2"));  // Правильный вызов
+            n = v2.size();
+            for (int i = 0; i < n; ++i)
+                v2[i] = initStr[i];
+            v2.show();
 
-    // Получаем и выводим значение элемента
-    cout << "sal[38225] = " << sal[38225] << endl;
+            v2.insert(v2.begin() + 3, "After third");
+            v2.show();
 
-    // Присваиваем значение несуществующего элемента
-    sal[38225] = sal[93];
+            cout << v2[6] << endl;  // Генерирует VectRangeErr
 
-    // Выводим измененный массив
-    cout << "After the modification of sal:\n";
-    sal.Show("sal");
+            v2.push_back("Add_1");
+            v2.push_back("Add_2");
+            v2.push_back("Add_3");
+            v2.show();
 
-    // Работаем с массивом строк
-    SparseArr<string> sa2(1000);
-    sa2[333] = "Nick";
-    sa2[222] = "Peter";
-    sa2[444] = "Ann";
-    sa2.Show("sa2");
+            v2.pop_back();
+            v2.pop_back();
+            v2.show();
+        }
+        catch (VectError& vre) {
+            vre.ErrMsg();
+        }
 
-    // Присваиваем значение несуществующего элемента
-    sa2[222] = sa2[555];
-    sa2.Show("sa2");
+        try {
+            // Тестирование копирования и присваивания
+            Vect<int> v3;
+            v3.mark(string("v3"));  // Правильный вызов
+            v3.push_back(41);
+            v3.push_back(42);
+            v3.push_back(43);
+            v3.show();
+
+            Vect<int> v4;
+            v4.mark(string("v4"));  // Правильный вызов
+            v4 = v3;
+            v4.show();
+
+            v3.pop_back();
+            v3.pop_back();
+            v3.pop_back();
+            v3.pop_back();  // Генерирует VectPopErr
+            v3.show();
+        }
+        catch (VectError& vre) {
+            vre.ErrMsg();
+        }
+    }
+    catch (...) {
+        cerr << "Epilogue: error of Main().\n";
+    }
 
     return 0;
 }
