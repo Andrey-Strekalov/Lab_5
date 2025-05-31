@@ -1,88 +1,94 @@
-﻿///////////////////////////////////////////////////////////
-// Main.cpp
-#include "Vect.h"
-#include <iostream>
+﻿#include <iostream>
 #include <string>
+#include "Deque.h"
 
-using namespace std;
-
-template<class T>
-void SomeFunction(Vect<T> v) {
-    std::cout << "Reversive output for " << v.mark() << endl;
-    size_t n = v.size();
-    for (int i = n - 1; i >= 0; --i)
-        std::cout << v[i] << " ";
-    std::cout << endl;
-}
-
+// Основная функция программы
 int main() {
-    try {
-        string initStr[5] = { "first", "second", "third", "fourth", "fifth" };
+	system("chcp 1251 > nul");
 
-        // Тестирование вектора int
-        Vect<int> v1(10);
-        v1.mark(string("v1"));  // Исправлено: добавлены скобки
-        size_t n = v1.size();
-        for (int i = 0; i < n; ++i)
-            v1[i] = i + 1;
-        v1.show();
-        SomeFunction(v1);
+	try {
+		// ================================================
+		// Демонстрация работы с целыми числами (int)
+		// ================================================
+		std::cout << "=== Тестирование дека для целых чисел (int) ===" << std::endl;
 
-        try {
-            // Тестирование вектора string
-            Vect<string> v2(5);
-            v2.mark(string("v2"));  // Правильный вызов
-            n = v2.size();
-            for (int i = 0; i < n; ++i)
-                v2[i] = initStr[i];
-            v2.show();
+		Deque<int> intDeque;  // Создаем дек для целых чисел
 
-            v2.insert(v2.begin() + 3, "After third");
-            v2.show();
+		// Добавляем элементы
+		intDeque.push_back(10);   // В конец: 10
+		intDeque.push_front(5);   // В начало: 5, 10
+		intDeque.push_back(20);   // В конец: 5, 10, 20
 
-            cout << v2[6] << endl;  // Генерирует VectRangeErr
+		// Выводим первый и последний элементы
+		std::cout << "Первый элемент: " << intDeque.front() << " (ожидается 5)" << std::endl;
+		std::cout << "Последний элемент: " << intDeque.back() << " (ожидается 20)" << std::endl;
 
-            v2.push_back("Add_1");
-            v2.push_back("Add_2");
-            v2.push_back("Add_3");
-            v2.show();
+		// Удаляем первый элемент
+		intDeque.pop_front();
+		std::cout << "Первый элемент после удаления: " << intDeque.front() << " (ожидается 10)" << std::endl;
+		std::cout << "Размер дека: " << intDeque.size() << " (ожидается 2)" << std::endl;
 
-            v2.pop_back();
-            v2.pop_back();
-            v2.show();
-        }
-        catch (VectError& vre) {
-            vre.ErrMsg();
-        }
+		// ================================================
+		// Демонстрация работы с числами с плавающей точкой (double)
+		// ================================================
+		std::cout << "\n=== Тестирование дека для чисел с плавающей точкой (double) ===" << std::endl;
 
-        try {
-            // Тестирование копирования и присваивания
-            Vect<int> v3;
-            v3.mark(string("v3"));  // Правильный вызов
-            v3.push_back(41);
-            v3.push_back(42);
-            v3.push_back(43);
-            v3.show();
+		Deque<double> doubleDeque;  // Создаем дек для чисел double
 
-            Vect<int> v4;
-            v4.mark(string("v4"));  // Правильный вызов
-            v4 = v3;
-            v4.show();
+		// Добавляем элементы
+		doubleDeque.push_back(3.14);
+		doubleDeque.push_front(2.71);
 
-            v3.pop_back();
-            v3.pop_back();
-            v3.pop_back();
-            v3.pop_back();  // Генерирует VectPopErr
-            v3.show();
-        }
-        catch (VectError& vre) {
-            vre.ErrMsg();
-        }
-    }
-    catch (...) {
-        cerr << "Epilogue: error of Main().\n";
-    }
+		// Выводим первый и последний элементы
+		std::cout << "Первый элемент: " << doubleDeque.front() << " (ожидается 2.71)" << std::endl;
+		std::cout << "Последний элемент: " << doubleDeque.back() << " (ожидается 3.14)" << std::endl;
 
-    return 0;
+		// ================================================
+		// Демонстрация работы со строками (std::string)
+		// ================================================
+		std::cout << "\n=== Тестирование дека для строк (std::string) ===" << std::endl;
+
+		Deque<std::string> stringDeque;  // Создаем дек для строк
+
+		// Добавляем элементы
+		stringDeque.push_back("мир");
+		stringDeque.push_front("Привет");
+
+		// Выводим первый и последний элементы
+		std::cout << "Первый элемент: " << stringDeque.front() << " (ожидается 'Привет')" << std::endl;
+		std::cout << "Последний элемент: " << stringDeque.back() << " (ожидается 'мир')" << std::endl;
+
+		// ================================================
+		// Демонстрация обработки ошибок
+		// ================================================
+		std::cout << "\n=== Тестирование обработки исключений ===" << std::endl;
+
+		Deque<int> emptyDeque;  // Создаем пустой дек
+
+		std::cout << "Попытка удалить элемент из пустого дека..." << std::endl;
+		try {
+			emptyDeque.pop_front();  // Попытка удаления из пустого дека
+		}
+		catch (const std::exception& e) {
+			std::cerr << "Поймано исключение: " << e.what() << std::endl;
+		}
+
+		std::cout << "Попытка получить первый элемент пустого дека..." << std::endl;
+		try {
+			std::cout << emptyDeque.front() << std::endl;  // Попытка доступа к пустому деку
+		}
+		catch (const std::exception& e) {
+			std::cerr << "Поймано исключение: " << e.what() << std::endl;
+		}
+
+		std::cout << "\nВсе тесты завершены!" << std::endl;
+
+	}
+	catch (const std::exception& e) {
+		// Общий обработчик исключений
+		std::cerr << "Критическая ошибка: " << e.what() << std::endl;
+		return 1;  // Возвращаем код ошибки
+	}
+
+	return 0;  // Успешное завершение программы
 }
-///////////////////////////////////////////////////////////
